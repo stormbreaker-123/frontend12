@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useEffect } from "react";
 import { Box, Grid, Typography, Avatar, Divider } from "@mui/material";
 import AOS from "aos";

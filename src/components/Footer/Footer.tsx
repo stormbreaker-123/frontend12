@@ -1,5 +1,4 @@
 
-import AppWrap from "../wrapper/AppWrap";
 
 const Footer = () => {
   return (

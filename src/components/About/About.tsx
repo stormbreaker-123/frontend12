@@ -1,7 +1,7 @@
 
 import { Box, Card,CardActions,CardContent,CardMedia,Typography,Button } from '@mui/material'
 import images from '../../constants/images'
-import AppWrap from '../wrapper/AppWrap'
+
 
 const abouts =[
   {title:"Web Development", description:"need a good developer", imgUrl:images.about01 },

@@ -1,7 +1,7 @@
 // Navbar.jsx
-import React, { useState } from "react";
+import  { useState } from "react";
 import images from "../../constants/images";
-import { Box, Paper, Button, IconButton } from "@mui/material";
+import { Box, Paper, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { FaLinkedinIn, FaGithub, FaFacebookF } from 'react-icons/fa';
@@ -181,10 +181,10 @@ const Navbar = ({ onHeaderClick }) => {
         {/* Contact Button */}
         <Box sx={{ display: "flex", gap: 3,mt:3 }}>
       
-         <a href="https://www.google.com"> <FaLinkedinIn style={{color: '#0077b5', fontSize:30}}/>   </a> 
+         <a href="https://www.linkedin.com/in/sayantan-paul-97a862225" target="blank1"> <FaLinkedinIn style={{color: '#0077b5', fontSize:30}}/>   </a> 
        
-         <a href="">  <FaGithub style={{color: "#181717", fontSize:28}} /></a>  
-          <a href="">  <FaFacebookF style={{ color: "#1877f2", fontSize:28}} /> </a>
+         <a href="https://github.com/stormbreaker-123?tab=repositories" target="blank2">  <FaGithub style={{color: "#181717", fontSize:28}} /></a>  
+          <a href="https://www.linkedin.com/in/sayantan-paul-97a862225" target="blank3">  <FaFacebookF style={{ color: "#1877f2", fontSize:28}} /> </a>
      
         </Box>
       </nav>
