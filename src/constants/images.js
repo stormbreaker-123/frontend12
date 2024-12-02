@@ -48,7 +48,8 @@ import anywhere from "../assets/anywheretravel.jpg";
 
 
 import portfolio from "../assets/portfolio.png"
-export default {
+
+const images = {
   selenium,
   sql,
   portfolio,
@@ -92,3 +93,5 @@ export default {
   skype,
   spotify,
 };
+
+export default images;
