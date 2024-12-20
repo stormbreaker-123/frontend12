@@ -28,7 +28,7 @@ const AppWrap = (Component,idName) =>
 
         {/* Footer */}
 
-        {idName !== 'work' && (
+        {idName !== 'work' && idName!=='about' && (
         <Box
           sx={{
             position: "absolute",

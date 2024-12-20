@@ -1,0 +1,13 @@
+.ti ul{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-left:40% ;
+
+    
+   
+}
+.ti ul li{
+    display: inline-block;
+}
+
