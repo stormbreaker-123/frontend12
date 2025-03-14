@@ -184,7 +184,7 @@ const Navbar = ({ onHeaderClick }) => {
          <a href="https://www.linkedin.com/in/sayantan-paul-97a862225" target="blank1"> <FaLinkedinIn style={{color: '#0077b5', fontSize:30}}/>   </a> 
        
          <a href="https://github.com/stormbreaker-123?tab=repositories" target="blank2">  <FaGithub style={{color: "#181717", fontSize:28}} /></a>  
-          <a href="https://www.linkedin.com/in/sayantan-paul-97a862225" target="blank3">  <FaFacebookF style={{ color: "#1877f2", fontSize:28}} /> </a>
+          <a href="https://www.facebook.com/sayantan.paul.73113" target="blank3">  <FaFacebookF style={{ color: "#1877f2", fontSize:28}} /> </a>
      
         </Box>
       </nav>
