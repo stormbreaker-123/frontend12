@@ -88,9 +88,9 @@ const Header = () => {
         </Box>
       </Grid>
 
-      <Box sx={{position:"absolute",ml:67, mt:15}}>
+      <Box sx={{position:"absolute",ml:65, mt:13}}>
 
-        <img src={images.profile} alt="" style={{height:"572px"}} />
+        <img src={images.testImage} alt="" style={{width:"520px",height:"565px"}} />
 
       </Box>
     </Grid>

@@ -47,9 +47,12 @@ import anywhere from "../assets/anywheretravel.jpg";
  
 
 
-import portfolio from "../assets/portfolio.png"
+import portfolio from "../assets/portfolio.png";
+import testImage from "../assets/imgpf.png"
+
 
 const images = {
+  testImage,
   selenium,
   sql,
   portfolio,

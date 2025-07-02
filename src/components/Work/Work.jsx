@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 
 const works = [
   {
+    
     title: "Anywhere",
     appType: "Travel App",
     description:
@@ -134,6 +135,7 @@ const Work = () => {
                     marginBottom: 1,
                     fontFamily: "'Dancing Script', cursive",
                   }}
+                  
                 >
                   {work.title}
                 </Typography>
