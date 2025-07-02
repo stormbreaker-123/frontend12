@@ -1,17 +1,18 @@
 import { useEffect } from "react";
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography, Link } from "@mui/material";
 import images from "../../constants/images";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { red } from "@mui/material/colors";
 
 const works = [
   {
-    
     title: "Anywhere",
     appType: "Travel App",
     description:
       "Anywhere is a travel explorer app that sparks wanderlust and helps you discover the world. Whether you're an keen traveler or seeking your next adventure, Anywhere offers tools and inspiration to explore new destinations.",
     imgUrl: images.anywhere,
+    link: "",
   },
   {
     title: "Death Predictor",
@@ -19,12 +20,14 @@ const works = [
     description:
       "It can predict your death by taking some criteria like age, anaemia, diabetes, ejection_fraction etc.",
     imgUrl: images.ml,
+    link: "https://predictor-ml.onrender.com",
   },
   {
     title: "TIC TAC TOE",
     appType: "Web App",
     description: "Play And Enjoy the Game!",
     imgUrl: images.tictactoe,
+    link: "https://melodic-moxie-b63cd4.netlify.app",
   },
   {
     title: "Cnc Plotter Machine",
@@ -32,6 +35,7 @@ const works = [
     description:
       "A CNC plotter machine is a 3D controlled 2D plotting machines which uses a pen to draw text or image on any given solid surface can be used for the purposes such as PCB Design, logo design, etc",
     imgUrl: images.cnc,
+    link: "https://drive.google.com/file/d/1BDRERf6lqYD_lRQk-z_TRnuxKUUwDZvE/view",
   },
 ];
 
@@ -39,9 +43,9 @@ const Work = () => {
   useEffect(() => {
     AOS.init({
       duration: 1200, // Animation duration
-      offset: 0,      // Trigger animation as soon as element is within the viewport
+      offset: 0, // Trigger animation as soon as element is within the viewport
       easing: "ease-in-out", // Easing function
-      once: true,     // Trigger animation only once
+      once: true, // Trigger animation only once
     });
   }, []);
   return (
@@ -74,18 +78,17 @@ const Work = () => {
             mt: -8,
           }}
         >
-          {works.map((work,index) => (
+          {works.map((work, index) => (
             <Card
-
-            data-aos={
-              index === 0
-                ? "fade-left"  // First card (left fade)
-                : index === 1
-                ? "fade-up"    // Second card (fade up)
-                : index === 2
-                ? "fade-down"  // Third card (fade down)
-                : "fade-right" // Fourth card (right fade)
-            }
+              data-aos={
+                index === 0
+                  ? "fade-left" // First card (left fade)
+                  : index === 1
+                  ? "fade-up" // Second card (fade up)
+                  : index === 2
+                  ? "fade-down" // Third card (fade down)
+                  : "fade-right" // Fourth card (right fade)
+              }
               sx={{
                 width: 305,
                 height: 450,
@@ -129,16 +132,40 @@ const Work = () => {
                 </Typography>
                 <Typography
                   variant="h6"
-                  
                   sx={{
                     fontWeight: "bold",
                     marginBottom: 1,
                     fontFamily: "'Dancing Script', cursive",
                   }}
-                  
                 >
-                  {work.title}
+                  {work.link ? (
+                    // If there is a link, render it as a clickable <a> tag
+                    <a
+                      href={work.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        textDecoration: "none",
+                        color: "inherit",
+                        transition: "color 0.3s ease",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.color = "red";
+                        e.target.style.cursor = "grab";
+                      }} // Hover color change to red
+                      onMouseLeave={(e) => {
+                        e.target.style.color = "inherit";
+                        e.target.style.cursor = "default";
+                      }}
+                    >
+                      {work.title}
+                    </a>
+                  ) : (
+                  
+                    <span>{work.title}</span>
+                  )}
                 </Typography>
+
                 <Typography
                   sx={{
                     fontSize: "14px",
